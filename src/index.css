@@ -1,13 +1,67 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Wet+Paint&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
+html,body{
+  overflow: hidden;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("./Images/home1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App{
+  width: 85vw;
+  height: 90vh;
+  box-shadow: 1px 1px 3px 1px rgb(165, 165, 165);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100000;
+}
+
+.navigation{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+@media(max-width : 842px){
+  .App{
+    width: 95vw;
+    height: 95vh;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width : 584px) {
+  .App {
+      position: static;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 94.5%;
+    right: 32%;
+    bottom: 0;
+  }
 }

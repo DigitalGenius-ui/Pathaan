@@ -1,0 +1,136 @@
+.home{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.home .home_bg {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0.4), rgba(0, 0, 0)), url("../../Images/home1.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.home .contents{
+    margin: 5rem 0 0 4rem;
+}
+
+.contents .title, .release, .details{
+    overflow: hidden;
+}
+
+.home h1 , p{
+    color: rgb(201, 201, 201);
+}
+
+.title h1{
+    font-family: 'Rubik Wet Paint', cursive;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.film_type{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.film_type .type{
+    background-color: rgb(6, 6, 61);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.type p{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.release p {
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.details {
+    padding-top: 1rem;
+}
+
+.details .details_title h1 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.details p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    width: 34rem;
+    line-height: 1.5rem;
+}
+
+.home .trailer{
+    padding-top: 3rem;
+}
+
+.trailer .btn{
+    width: 7.5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(201, 201, 201);
+    box-shadow: 0px 0px 1px 1px rgb(201, 201, 201);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trailer .btn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* responsive part  */
+
+@media(max-width : 1144px) {
+    .home .contents {
+        margin: 5rem 0 0 0;
+    }
+}
+
+@media(max-width : 842px) {
+    .home .contents {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media(max-width : 670px) {
+    .details p {
+        width: 100%;
+    }
+}
+
+@media(max-width : 462px) {
+    .home {
+        padding:1rem;
+    }
+}
+
+@media(max-width : 400px) {
+    .title h1 {
+    font-size: 3rem;
+    }
+}

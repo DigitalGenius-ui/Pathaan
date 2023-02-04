@@ -1,0 +1,133 @@
+.gallery .gallery_bg {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../Images/gallery.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.gallery .slider {
+    width: inherit;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider .gallery_title{
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.gallery_title h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+.slider .show_image{
+    padding-bottom: 1rem;
+}
+
+.slider .show_image img{
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* slider part  */
+
+.slide_image img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    margin-left: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.slideMe{
+    width: 25rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slick-slide {
+    outline: none
+}
+
+.slideMe .arrows span{
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    z-index: 100000;
+}
+
+.arrows .prev{
+    right: -1.8rem;
+    cursor: pointer;
+}
+
+.arrows .next{
+    left: 0;
+    cursor: pointer;
+}
+
+/* responsive part  */
+
+@media(max-width : 842px) {
+    .gallery{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider{
+        padding: 0 1rem;
+    }
+    .slider .show_image img {
+        width: 28rem;
+    }
+}
+
+@media(max-width : 500px) {
+    .slideMe {
+        width: 20rem;
+    }
+
+    .slider .show_image img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
+
+@media(max-width : 400px) {
+    .slideMe .arrows{
+        display: none;
+    }
+}
+
+
+@media(max-width : 370px) {
+    .slider .show_image img {
+        width: 90%;
+    }
+
+    .slide_image img {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-left: 0.3rem;
+    }
+}

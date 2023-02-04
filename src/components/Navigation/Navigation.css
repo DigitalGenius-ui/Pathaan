@@ -1,0 +1,47 @@
+.navMenu{
+    background-color: rgb(31, 31, 31);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden;
+}
+
+.navMenu .nav{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.nav .icons{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .icons:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.7;
+}
+
+.nav .castsIcon{
+    font-size: 1.4rem;
+}
+
+.nav .icons.active {
+    background-color: rgb(161, 14, 14);
+    opacity: 0.7;
+}
+
+@media(max-width : 584px) {
+    .navMenu .nav {
+        flex-direction: row;
+    }
+
+    .navMenu {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}

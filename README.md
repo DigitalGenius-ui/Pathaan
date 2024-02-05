@@ -1,6 +1,6 @@
 ## Pathaan Movie website using React JS and framer motion
 
-<img src="https://res.cloudinary.com/ghazni/image/upload/v1677479072/White_Green_Modern_Bold_Guide_to_Web_3.0_Youtube_Thumbnail_7_y7khv6.png" alt="banner"/>
+<img src="./public/animPathan.png" alt="banner"/>
 
 ## Demo
 [Demo](https://pathaan.netlify.app/)
